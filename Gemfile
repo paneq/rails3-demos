@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem "nifty-generators"
 gem 'rails', '3.0.0'
 
 # Bundle edge Rails instead:
