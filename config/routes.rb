@@ -1,4 +1,5 @@
 Rails3Demo::Application.routes.draw do
+  get "ujs/index", :as => :ujs
   get "demo/index"
 
   # The priority is based upon order of creation:
@@ -50,7 +51,7 @@ Rails3Demo::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "demo#index"
 
   # See how all your routes lay out with "rake routes"
 

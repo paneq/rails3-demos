@@ -1,0 +1,35 @@
+<% javascript('data_remove') %>
+<% javascript('data_toggle') %>
+
+<% title 'Dynamically removing some website content in Rails 3 Way (Prototype + UJS)' %>
+
+<div id="search">
+  <div class="results">
+    Imagine search results here ...
+    <ul>
+      <li>Result 1</li>
+      <li>Result 2</li>
+    </ul>
+  </div>
+
+  <%= link_to 'Toggle results', '#', :'data-toggle' => '#search .results' %>
+  <%= link_to 'Reset results (cannot undo)', '#', :'data-remove' => '#search .results' %>
+</div>
+
+<div id="info">
+  To find out more look at these files:
+  <ul>
+    <li>
+      app/views/ujs/index.html.erb
+    </li>
+    <li>
+      public/javascripts/data_toggle.js
+    </li>
+    <li>
+      public/javascripts/data_remove.js
+    </li>
+    <li>
+      public/javascripts/rails.js
+    </li>
+  </ul>
+</div>
