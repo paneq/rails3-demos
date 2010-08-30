@@ -73,3 +73,7 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+div#info {
+  margin-top: 20px;
+}
